@@ -9,3 +9,4 @@ export function addElementToList(list, element) {
     // Appends the string element to the list and returns the updated list
     return list.push(element);
 }
+
