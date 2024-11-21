@@ -1,3 +1,5 @@
+import { Map } from 'immutable';
+
 export default function accessImmutableObject(object, array) {
   const result = array.reduce((acc, key) => acc && acc[key], object);
   
