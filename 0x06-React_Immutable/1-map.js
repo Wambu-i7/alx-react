@@ -1,6 +1,7 @@
-// 1-map.js
-const Immutable = require('immutable');
+const { Map } = require('immutable');
 
-function getImmutableObject(object) {
-  return Immutable.Map(object);
+function getImmutableObject(obj) {
+  return Map(obj);
 }
+
+module.exports = getImmutableObject;
