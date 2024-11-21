@@ -1,7 +1,7 @@
-const { fromJS } = require('immutable');
+const Immutable = require('immutable');
 
-function getImmutableObject(obj) {
-  return fromJS(obj);
+function getImmutableObject(object) {
+  return Immutable.fromJS(object);
 }
 
 module.exports = getImmutableObject;
