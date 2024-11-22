@@ -1,12 +1,6 @@
-import { List } from 'immutable';
+import { Map } from 'immutable';
 
-export function getListObject(array) {
-    // Converts the array to an immutable List
-    return List(array);
+export default function accessImmutableObject(object, array) {
+  const immutableMap = Map(object);
+  return immutableMap.getIn(array);
 }
-
-export function addElementToList(list, element) {
-    // Appends the string element to the list and returns the updated list
-    return list.push(element);
-}
-
